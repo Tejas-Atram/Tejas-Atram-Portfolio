@@ -7,7 +7,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
@@ -30,6 +30,10 @@
     <div class="social-links">
       <a href="https://github.com/Tejas-Atram" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/tejas-atram-5b6259259/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
     </div>
   </header>
 
@@ -45,7 +49,6 @@
         </p>
         
         <div class="cta-group">
-          <!-- Add your actual resume link in the href -->
           <a href="#" class="btn btn-primary" download>
             <i class="fa-solid fa-download"></i> Download Resume
           </a>
@@ -68,7 +71,6 @@
       <p class="section-subtitle">Proficient in modern web technologies with a focus on clean UI, performant logic, and robust system architecture.</p>
       
       <div class="skills-grid">
-        <!-- Tech Stack Badges using FontAwesome and Glassmorphism -->
         <div class="skill-card glass-card">
           <i class="fa-brands fa-react" style="color: #61DAFB;"></i>
           <span>React.js</span>
@@ -104,7 +106,7 @@
       </div>
     </section>
 
-    <!-- SECTION 3: Projects (NEW - Tailored for HR/Recruiters) -->
+    <!-- SECTION 3: Projects -->
     <section id="projects" class="projects-section">
       <h2 class="section-title">Featured <span>Projects</span></h2>
       
@@ -201,5 +203,35 @@
       </div>
     </section>
   </main>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const icon = themeToggle.querySelector('i');
+    
+    // Check local storage or system preference
+    const currentTheme = localStorage.getItem('theme') || 
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+    // Apply the saved theme on load
+    if (currentTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      icon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    // Toggle logic
+    themeToggle.addEventListener('click', () => {
+      let theme = document.documentElement.getAttribute('data-theme');
+      if (theme === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        icon.classList.replace('fa-sun', 'fa-moon');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        icon.classList.replace('fa-moon', 'fa-sun');
+      }
+    });
+  </script>
 </body>
 </html>
