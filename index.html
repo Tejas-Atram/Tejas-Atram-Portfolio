@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Tejas Atram | Full-Stack Developer</title>
+</head>
+<body>
+  <!-- STICKY NAVBAR -->
+  <header class="glass-nav">
+    <div class="logo">
+      <a href="#">Tejas<span>.</span></a>
+    </div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="social-links">
+      <a href="https://github.com/Tejas-Atram" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/tejas-atram-5b6259259/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: Hero / About -->
+    <section id="about" class="hero-section">
+      <div class="hero-text">
+        <p class="greeting">Hi, I'm</p>
+        <h1 class="name">Tejas Atram</h1>
+        <h2 class="role">Full-Stack Developer</h2>
+        <p class="description">
+          A passionate developer with a strong foundation in <strong>Java Data Structures</strong> and <strong>React.js</strong>. I thrive on solving intricate technical challenges while effectively collaborating across teams to build scalable, high-performance web applications.
+        </p>
+        
+        <div class="cta-group">
+          <!-- Add your actual resume link in the href -->
+          <a href="#" class="btn btn-primary" download>
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            View My Work
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-wrapper glass-card">
+          <img src="images/hero-headshot.webp" alt="Tejas Atram">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">My <span>Toolkit</span></h2>
+      <p class="section-subtitle">Proficient in modern web technologies with a focus on clean UI, performant logic, and robust system architecture.</p>
+      
+      <div class="skills-grid">
+        <!-- Tech Stack Badges using FontAwesome and Glassmorphism -->
+        <div class="skill-card glass-card">
+          <i class="fa-brands fa-react" style="color: #61DAFB;"></i>
+          <span>React.js</span>
+        </div>
+        <div class="skill-card glass-card">
+          <i class="fa-brands fa-node-js" style="color: #339933;"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="skill-card glass-card">
+          <i class="fa-brands fa-js" style="color: #F7DF1E;"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card glass-card">
+          <i class="fa-brands fa-java" style="color: #f89820;"></i>
+          <span>Java & DSA</span>
+        </div>
+        <div class="skill-card glass-card">
+          <i class="fa-solid fa-database" style="color: #4DB33D;"></i>
+          <span>MongoDB</span>
+        </div>
+        <div class="skill-card glass-card">
+          <i class="fa-brands fa-html5" style="color: #E34F26;"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card glass-card">
+          <i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-card glass-card">
+          <i class="fa-brands fa-git-alt" style="color: #F05032;"></i>
+          <span>Git / GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Projects (NEW - Tailored for HR/Recruiters) -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-card">
+          <div class="project-content">
+            <h3>AI-Powered Resume Analyzer</h3>
+            <p>A full-stack application that utilizes AI APIs to parse and score resumes based on job descriptions, streamlining the recruiting process.</p>
+            <div class="tech-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>OpenAI API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> Source Code</a>
+              <a href="#" target="_blank" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card">
+          <div class="project-content">
+            <h3>Multi-Language Dictionary App</h3>
+            <p>An interactive, fast dictionary application supporting multiple languages. Features text-to-speech, phonetic transcriptions, and offline caching.</p>
+            <div class="tech-tags">
+              <span>React.js</span>
+              <span>Dictionary API</span>
+              <span>CSS Modules</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> Source Code</a>
+              <a href="#" target="_blank" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Testimony -->
+    <section id="testimony" class="testimony-section">
+      <h2 class="section-title">Professional <span>Endorsement</span></h2>
+      <div class="testimony-card glass-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <p class="testimony-text">
+          "A rare combination of creativity and punctuality. Tejas consistently delivers high-quality React solutions while maintaining clear communication. Having worked with many teams at Infosys, I can say his work ethic and commitment to deadlines are truly top-tier."
+        </p>
+        <div class="testimony-author">
+          <img src="images/testimony-headshot.webp" alt="Kartikesh Tongase">
+          <div class="author-info">
+            <h4>Kartikesh Tongase</h4>
+            <p>Project Manager at Infosys</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Contact -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <p class="section-subtitle">Currently seeking new opportunities to apply my full-stack development skills and Java DSA knowledge to impactful projects.</p>
+      
+      <div class="contact-container glass-card">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <a href="mailto:tejasatram1230@gmail.com" class="contact-link">
+            <i class="fa-solid fa-envelope"></i> tejasatram1230@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/tejas-atram-5b6259259/" target="_blank" class="contact-link">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+          </a>
+          <a href="https://github.com/Tejas-Atram" target="_blank" class="contact-link">
+            <i class="fa-brands fa-github"></i> GitHub Profile
+          </a>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="5" placeholder="Let's build something together..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
